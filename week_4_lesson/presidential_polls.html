@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Presidential Polls</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        .poll {
+            margin: 50px auto;
+            max-width: 500px;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .poll h2 {
+            margin-top: 0;
+        }
+
+        .poll ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .poll li {
+            margin-bottom: 10px;
+        }
+
+        .poll input[type="submit"] {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Presidential Polls</h1>
+    <div class="poll">
+        <h2>Who will you vote for in the upcoming presidential election?</h2>
+        <form>
+            <ul>
+                <li><input type="radio" name="candidate" value="candidate1"> Candidate 1</li>
+                <li><input type="radio" name="candidate" value="candidate2"> Candidate 2</li>
+                <li><input type="radio" name="candidate" value="candidate3"> Candidate 3</li>
+            </ul>
+            <input type="submit" value="Vote">
+        </form>
+    </div>
+
+<h1>Presidential Polls</h1>
+<div class="poll">
+    <h2>Who will you vote for in the upcoming presidential election?</h2>
+    <form>
+        <ul>
+            <li><input type="radio" name="question1" value="candidate1"> Candidate 1</li>
+            <li><input type="radio" name="question1" value="candidate2"> Candidate 2</li>
+            <li><input type="radio" name="question1" value="candidate3"> Candidate 3</li>
+        </ul>
+        <input type="submit" value="Vote">
+    </form>
+</div>
+
+<div class="poll">
+    <h2>What is your opinion on the current state of the economy?</h2>
+    <form>
+        <ul>
+            <li><input type="radio" name="question2" value="good"> Good</li>
+            <li><input type="radio" name="question2" value="average"> Average</li>
+            <li><input type="radio" name="question2" value="poor"> Poor</li>
+        </ul>
+        <input type="submit" value="Vote">
+    </form>
+</div>
+
+<div class="poll">
+    <h2>Do you support the current administration's policies on healthcare?</h2>
+    <form>
+        <ul>
+            <li><input type="radio" name="question3" value="yes"> Yes</li>
+            <li><input type="radio" name="question3" value="no"> No</li>
+            <li><input type="radio" name="question3" value="unsure"> Unsure</li>
+        </ul>
+        <input type="submit" value="Vote">
+    </form>
+</div>
+
+<div class="poll">
+    <h2>What is your stance on immigration reform?</h2>
+    <form>
+        <ul>
+            <li><input type="radio" name="question4" value="support"> Support</li>
+            <li><input type="radio" name="question4" value="oppose"> Oppose</li>
+            <li><input type="radio" name="question4" value="neutral"> Neutral</li>
+        </ul>
+        <input type="submit" value="Vote">
+    </form>
+</div>
+
+<div class="poll">
+    <h2>Do you believe in taking action to address climate change?</h2>
+    <form>
+        <ul>
+            <li><input type="radio" name="question5" value="yes"> Yes</li>
+            <li><input type="radio" name="question5" value="no"> No</li>
+            <li><input type="radio" name="question5" value="unsure"> Unsure</li>
+        </ul>
+        <input type="submit" value="Vote">
+    </form>
+
+
+</div>
+<div style="background-color: #f2f2f2; padding: 20px<div style="background-color: #f2f2f2; padding: 20px; border-radius: 5px;">
+    <h2 style="color: #333;">Presidential Polls</h2>
+    <form onsubmit="return processForm(event)">
+        <label for="poll1" style="color: #333; font-weight: bold;">Who is your preferred candidate?</label>
+        <input type="text" id="poll1" name="poll1" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+
+        <label for="poll2" style="color: #333; font-weight: bold;">Rate the candidates (1-5):</label>
+        <select id="poll2" name="poll2" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="poll3" style="color: #333; font-weight: bold;">What issues are most important to you?</label>
+        <textarea id="poll3" name="poll3" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+
+        <label for="poll4" style="color: #333; font-weight: bold;">Which state are you from?</label>
+        <input type="text" id="poll4" name="poll4" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+
+        <label for="poll5" style="color: #333; font-weight: bold;">Additional comments:</label>
+        <textarea id="poll5" name="poll5" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+  <h2 style="color: #333;">Presidential Polls</h2>
+    <form>
+        <label for="poll1" style="color: #333; font-weight: bold;">Who is your preferred candidate?</label>
+        <input type="text" id="poll1" name="poll1" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+
+        <label for="poll2" style="color: #333; font-weight: bold;">Rate the candidates (1-5):</label>
+        <select id="poll2" name="poll2" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+
+        <label for="poll3" style="color: #333; font-weight: bold;">What issues are most important to you?</label>
+        <textarea id="poll3" name="poll3" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+
+        <label for="poll4" style="color: #333; font-weight: bold;">Which state are you from?</label>
+        <input type="text" id="poll4" name="poll4" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+
+        <label for="poll5" style="color: #333; font-weight: bold;">Additional comments:</label>
+        <textarea id="poll5" name="poll5" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea>
+    </form>
+</div>
+<script src="script.js"></script> </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Column Layout Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-container label {
+            grid-column: span 2;
+            margin-bottom: 5px;
+        }
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            grid-column: span 2;
+        }
+        .form-container .full-width {
+            grid-column: span 2;
+        }
+        .form-container input[type="submit"] {
+            width: auto;
+            grid-column: span 2;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Two-Column Layout Form</h1>
+    <form class="form-container" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="nationality" class="full-width">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+        
+        <label for="passport_number" class="full-width">Passport Number:</label>
+        <input type="text" id="passport_number" name="passport_number" required>
+        
+        <label for="expiry_date" class="full-width">Passport Expiry Date:</label>
+        <input type="date" id="expiry_date" name="expiry_date" required>
+        
+        <label for="photo" class="full-width">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Style Layout</title>
+    <link rel="stylesheet" href="~/users/admin/downloads/html/week_3_lesson/styles.css">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0e8dd1;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: x-small;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #1dad1d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+.logo{
+    width: 5dvh;
+    height: 5dvh;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            
+                <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG9.png" alt="logo" class="logo"> 
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Network</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Messaging</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Main Content</h1>
+            <p>This is the main content area.</p>
+           <p> generate Lorem ipsum dolor sit, amet 
+            consectetur adipisicing elit. Quasi, commodi voluptate, dolores quidem laborum ratione earum et qui mollitia facere nobis aliquam. Sunt temporibus eos fuga? Animi consectetur provident soluta.
+           </p>
+        </main>
+    </div>
+</body>
+</html>
