@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Tech Innovators Conference 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Thank You for Registering!</h1>
+        </div>
+    </header>
+
+    <section id="thank-you">
+        <div class="container">
+            <h2>Registration Summary</h2>
+            <p>Thank you, <span id="name-summary"></span>, for registering for the Tech Innovators Conference 2024!</p>
+            <p>Your registration details are as follows:</p>
+            <ul>
+                <li><strong>Name:</strong> <span id="name"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Ticket Type:</strong> <span id="ticket-type"></span></li>
+            </ul>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tech Innovators Conference. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Retrieve form data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        const email = urlParams.get('email');
+        const ticketType = urlParams.get('ticket-type');
+
+        // Populate the summary with form data
+        document.getElementById('name-summary').textContent = name;
+        document.getElementById('name').textContent = name;
+        document.getElementById('email').textContent = email;
+        document.getElementById('ticket-type').textContent = ticketType;
+    </script>
+</body>
+</html>
