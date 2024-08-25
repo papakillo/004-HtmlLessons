@@ -1,0 +1,209 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h2
+{
+    text-align: center;
+    color: steelblue;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav{
+    position: relative;
+}
+
+.nav-links{
+    list-style: none;
+    padding: 0 ;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li{
+ margin: 0 10px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+   margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+.social-media{
+    display:flex;
+    align-items: center;
+}
+
+.social-media img {
+    height: 30px;
+    width: 30px; /* Ensure consistent size */
+    border-radius: 50%; /* Optional: make icons circular */
+}
+
+.social-media a {
+    margin-left: 10px; /* Add spacing between icons */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-media a:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.hero {
+    background: url('/week_7_projects/restaurants/images/restaurant-banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    background-size: 98%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form select,
+form button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #e8491d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}

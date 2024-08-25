@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="images/logo.jpg" alt="Delicious Bites Logo" class="logo">
+               <!--<!-- <h1>Delicious Bites</h1>-->
+                <nav>
+                    <ul>
+                        <li><a href="#home">Homes</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero" style="height: 350px;">
+        <div class="container">
+            <h2>Welcome to Delicious Bites</h2>
+            <p>Experience the taste of our exquisite dishes.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-02.jpg" alt="Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza topped with fresh tomatoes, mozzarella, and basil. - $10</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-04.jpg" alt="Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, croutons, and Caesar dressing. - $8</p>
+                </div>
+            
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-04.jpg" alt="Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, croutons, and Caesar dressing. - $8</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-05.jpg" alt="Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, croutons, and Caesar dressing. - $8</p>
+                </div>
+         
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-05.jpg" alt="Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, croutons, and Caesar dressing. - $8</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/week_7_projects/restaurants/images/food-04.jpg" alt="Salad">
+                    <h3>Caesar Salad</h3>
+                    <p>Crisp romaine lettuce, croutons, and Caesar dressing. - $8</p>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <form action="order-summary.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="meal">Select your meal:</label>
+                <select id="meal" name="meal">
+                    <option value="Margherita Pizza - $10">Margherita Pizza - $10</option>
+                    <option value="Spaghetti Carbonara - $12">Spaghetti Carbonara - $12</option>
+                    <option value="Caesar Salad - $8">Caesar Salad - $8</option>
+                    <!-- Add more meal options as needed -->
+                </select>
+
+                <button type="submit">Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>123 Flavor Street, Tasty Town</p>
+            <p>Email: contact@deliciousbites.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Purple Bites. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
